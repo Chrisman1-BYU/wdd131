@@ -8,7 +8,7 @@ if(button.textContent === "☰"){
 button.textContent = "X";
 } else {
 button.textContent = "☰";
-}
+} 
 
 });
 
