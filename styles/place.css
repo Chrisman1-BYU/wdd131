@@ -14,7 +14,7 @@ body {
 header {
     background: var(--primary);
     color: white;
-    text-align: center;
+    text-align: center; 
     padding: 1rem;
 }
 
