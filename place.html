@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals personal profile page with course information and projects.">
+    <meta name="description" content="Explore Ghana's culture, weather, and attractions in this responsive country page.">
     <meta name="author" content="Chrisman Asamoah">
 
-    <title>Visit Ghana</title>
+    <title>Visit Ghana | Country Page</title>
+
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
 
 <header>
     <h1>Visit Ghana</h1>
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
     <picture>
         <source srcset="images/ghana-building.webp" media="(min-width: 768px)">
-        <img src="images/ghana-building.webp" alt="Beautiful Ghana">
+        <img src="images/ghana-building.webp" alt="Beautiful Ghana landscape">
     </picture>
 </section>
 
-<!-- MAIN CONTENT -->
 <main>
+    <!-- ABOUT -->
     <section class="info">
         <h2>About Ghana</h2>
-        <p>Ghana is a vibrant country in West Africa known for culture, history, and hospitality.</p>
+        <p>
+            Ghana is a vibrant West African country known for its rich culture, 
+            friendly people, and historical landmarks. From beautiful beaches to 
+            bustling cities, Ghana offers unforgettable experiences.
+        </p>
     </section>
 
     <!-- WEATHER -->
     <section class="weather">
         <h2>Weather</h2>
+
+        <!-- SVG ICON (MOBILE) -->
+        <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
         <p>Temperature: <span id="temp">8</span>°C</p>
         <p>Wind Speed: <span id="wind">10</span> km/h</p>
         <p>Wind Chill: <span id="windChill"></span></p>

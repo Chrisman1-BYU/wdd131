@@ -27,15 +27,33 @@ main {
     padding: 1rem;
 }
 
-.weather::after {
-    content: " ⛅";
+.info, .weather {
+    margin-bottom: 1rem;
 }
 
-/* RESPONSIVE */
+/* SVG icon (mobile view) */
+.weather-icon {
+    width: 50px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Desktop emoji using pseudo-element */
+.weather::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE LAYOUT */
 @media (min-width: 768px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+
+    /* Hide SVG in desktop */
+    .weather-icon {
+        display: none;
     }
 }
