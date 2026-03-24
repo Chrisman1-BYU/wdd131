@@ -1,0 +1,41 @@
+:root {
+    --primary: #44228b;
+    --secondary: #fcd116;
+    --dark: #006b3f;
+    --text: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem;
+}
+
+.weather::after {
+    content: " ⛅";
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
