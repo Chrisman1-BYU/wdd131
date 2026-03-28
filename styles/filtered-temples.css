@@ -4,31 +4,28 @@ body {
   background-color: #f4f4f4;
 }
 
-header {
+/* NAV FLEXBOX (REQUIRED) */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   background-color: #333;
-  color: white;
-  text-align: center;
   padding: 1rem;
 }
 
-nav {
-  margin-top: 10px;
-}
-
-nav button {
-  margin: 5px;
-  padding: 10px 15px;
-  border: none;
-  background-color: #555;
+nav a {
   color: white;
-  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #555;
   border-radius: 5px;
 }
 
-nav button:hover {
+nav a:hover {
   background-color: #ff9800;
 }
 
+/* MAIN GRID */
 #temple-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -36,6 +33,7 @@ nav button:hover {
   gap: 1rem;
 }
 
+/* CARD STYLE */
 section {
   background: white;
   border-radius: 10px;
@@ -54,10 +52,21 @@ img {
   margin-top: 10px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #333;
   color: white;
-  margin-top: 1rem;
+}
+
+/* ✅ MEDIA QUERY (REQUIRED) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #temple-container {
+    grid-template-columns: 1fr;
+  }
 }
