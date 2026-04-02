@@ -1,9 +1,2 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Site plan loaded successfully");
-
-    const form = document.querySelector("form");
-
-    form.addEventListener("submit", () => {
-        alert("Thank you! Your review has been submitted.");
-    });
-}); 
+// Example JS file – currently just logs a message
+console.log("Site Plan JS loaded successfully.");

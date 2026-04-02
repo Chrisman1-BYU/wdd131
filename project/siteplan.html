@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Site Plan - EduConnect Hub</title>
-
-<meta name="description" content="This document outlines the site plan for EduConnect Hub, including purpose, audience scenarios, design choices, and layout structure.">
-<meta name="author" content="Chrisman Asamoah">
-
-<link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - EduConnect Hub</title>
+    <meta name="description" content="This document outlines the site plan for EduConnect Hub, including purpose, audience scenarios, design choices, and layout structure.">
+    <meta name="author" content="Chrisman Asamoah">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
 
 <header>
     <h1>EduConnect Hub - Website Plan</h1>
 </header>
 
-<main>
-
 <section>
     <h2>Site Name</h2>
     <p><strong>EduConnect Hub</strong></p>
-    <p>This name reflects a platform that connects students with educational resources and opportunities.</p>
-    <p><strong>Logo:</strong> A simple book icon representing knowledge and learning.</p>
+    <p>This platform connects students with educational resources and opportunities.</p>
 </section>
 
 <section>
@@ -49,10 +42,10 @@
     <p><strong>Secondary Color:</strong> #F6F5AE – Used for background</p>
 </section>
 
-<section> 
+<section>
     <h2>Typography</h2>
-    <p><strong>Font 1:</strong> Arial – Used for body text</p>
-    <p><strong>Font 2:</strong> Georgia – Used for headings</p>
+    <p><strong>Font 1:</strong> Arial – Body text</p>
+    <p><strong>Font 2:</strong> Georgia – Headings</p>
 </section>
 
 <section>
@@ -86,51 +79,75 @@
     </pre>
 </section>
 
-<!-- REQUIRED FORM SECTION -->
 <section>
-    <h2>Product Review Form</h2>
-
+    <h2>Feedback Form</h2>
     <form method="get" action="review.html">
-
-        <label for="product">Select Product:</label>
+        
+        <!-- Select -->
+        <label for="product">Select a Product:</label>
         <select id="product" name="product" required>
-            <option value="">--Choose a product--</option>
+            <option value="" disabled selected>Select a Product ...</option>
             <option value="book">Book</option>
             <option value="course">Course</option>
             <option value="app">App</option>
         </select>
 
-        <p>Rating:</p>
-        <label><input type="radio" name="rating" value="1"> 1</label>
-        <label><input type="radio" name="rating" value="2"> 2</label>
-        <label><input type="radio" name="rating" value="3"> 3</label>
-        <label><input type="radio" name="rating" value="4"> 4</label>
-        <label><input type="radio" name="rating" value="5"> 5</label>
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Rate Your Experience:</legend>
 
-        <p>Features:</p>
-        <label><input type="checkbox" name="feature" value="easy"> Easy to use</label>
-        <label><input type="checkbox" name="feature" value="fast"> Fast</label>
-        <label><input type="checkbox" name="feature" value="helpful"> Helpful</label>
-        <label><input type="checkbox" name="feature" value="design"> Good design</label>
+            <input type="radio" id="rate1" name="rating" value="1" required>
+            <label for="rate1">1</label>
 
-        <label for="date">Date Used:</label>
-        <input type="date" id="date" name="date">
+            <input type="radio" id="rate2" name="rating" value="2" required>
+            <label for="rate2">2</label>
 
-        <label for="review">Your Review:</label>
-        <textarea id="review" name="review"></textarea>
+            <input type="radio" id="rate3" name="rating" value="3" required>
+            <label for="rate3">3</label>
 
-        <button type="submit">Submit</button>
+            <input type="radio" id="rate4" name="rating" value="4" required>
+            <label for="rate4">4</label>
+
+            <input type="radio" id="rate5" name="rating" value="5" required>
+            <label for="rate5">5</label>
+        </fieldset>
+
+        <!-- Date Input -->
+        <label for="visit-date">Date of Visit:</label>
+        <input type="date" id="visit-date" name="visit-date" required>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Features You Liked:</legend>
+
+            <input type="checkbox" id="easy" name="feature" value="easy">
+            <label for="easy">Easy to Use</label>
+
+            <input type="checkbox" id="fast" name="feature" value="fast">
+            <label for="fast">Fast</label>
+
+            <input type="checkbox" id="helpful" name="feature" value="helpful">
+            <label for="helpful">Helpful</label>
+
+            <input type="checkbox" id="design" name="feature" value="design">
+            <label for="design">Good Design</label>
+        </fieldset>
+
+        <!-- Textarea -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Feedback">
 
     </form>
 </section>
-
-</main>
 
 <footer>
     <p>© 2026 EduConnect Hub</p>
 </footer>
 
-<script src="scripts/script.js"></script>
+<script src="scripts/script.js" defer></script>
 
 </body>
 </html>
