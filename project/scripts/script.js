@@ -6,4 +6,4 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", () => {
         alert("Thank you! Your review has been submitted.");
     });
-});
+}); 
