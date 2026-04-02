@@ -6,17 +6,19 @@
 
 <title>Site Plan - EduConnect Hub</title>
 
-<meta name="description" content="Website plan for EduConnect Hub project.">
+<meta name="description" content="This document outlines the site plan for EduConnect Hub, including purpose, audience scenarios, design choices, and layout structure.">
 <meta name="author" content="Chrisman Asamoah">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body> 
+<body>
 
 <header>
     <h1>EduConnect Hub - Website Plan</h1>
 </header>
+
+<main>
 
 <section>
     <h2>Site Name</h2>
@@ -84,9 +86,51 @@
     </pre>
 </section>
 
+<!-- REQUIRED FORM SECTION -->
+<section>
+    <h2>Product Review Form</h2>
+
+    <form method="get" action="review.html">
+
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+            <option value="">--Choose a product--</option>
+            <option value="book">Book</option>
+            <option value="course">Course</option>
+            <option value="app">App</option>
+        </select>
+
+        <p>Rating:</p>
+        <label><input type="radio" name="rating" value="1"> 1</label>
+        <label><input type="radio" name="rating" value="2"> 2</label>
+        <label><input type="radio" name="rating" value="3"> 3</label>
+        <label><input type="radio" name="rating" value="4"> 4</label>
+        <label><input type="radio" name="rating" value="5"> 5</label>
+
+        <p>Features:</p>
+        <label><input type="checkbox" name="feature" value="easy"> Easy to use</label>
+        <label><input type="checkbox" name="feature" value="fast"> Fast</label>
+        <label><input type="checkbox" name="feature" value="helpful"> Helpful</label>
+        <label><input type="checkbox" name="feature" value="design"> Good design</label>
+
+        <label for="date">Date Used:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>
+
+</main>
+
 <footer>
     <p>© 2026 EduConnect Hub</p>
 </footer>
+
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
