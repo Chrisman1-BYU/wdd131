@@ -1,7 +1,7 @@
 const appData = {
     resources: [
         { title: "Math Study Tips", level: "Basic" },
-        { title: "Science Guide", level: "Intermediate" },
+        { title: "Science Guide", level: "Intermediate" }, 
         { title: "Exam Strategy", level: "Advanced" }
     ]
 };
